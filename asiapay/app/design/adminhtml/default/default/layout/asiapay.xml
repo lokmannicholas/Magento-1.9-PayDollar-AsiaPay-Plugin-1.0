@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <asiapay_adminhtml_asiapay_index>
+	<reference name="content">
+	  <block type="asiapay/adminhtml_asiapay" name="asiapay" />
+	</reference>
+  </asiapay_adminhtml_asiapay_index>
+</layout>

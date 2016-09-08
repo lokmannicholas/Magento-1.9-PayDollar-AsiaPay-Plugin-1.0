@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<config>
+	  <sections>
+		<payment>
+					<groups>
+				      <asiapay  translate="label" module="asiapay">
+					  <label>Asia Pay</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </enable>
+                          <title translate="label">
+                            <label>Title</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </title>
+                          <merchantid translate="label">
+                            <label>merchantId</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </merchantid>
+                          <successurl translate="label">
+                            <label>SuccessUrl</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </successurl>
+                          <failedurl translate="label">
+                            <label>FailedUrl</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </failedurl>
+                          <cancelurl translate="label">
+                            <label>CancelUrl</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </cancelurl>
+                           <multishippingsuccessurl translate="label">
+                               <label>Multishipping SuccessUrl</label>
+                               <frontend_type>text</frontend_type>
+                               <sort_order>4</sort_order>
+                               <show_in_default>1</show_in_default>
+                               <show_in_website>1</show_in_website>
+                               <show_in_store>1</show_in_store>
+                           </multishippingsuccessurl>
+                           <multishippingfailedurl translate="label">
+                               <label>Multishipping FailedUrl</label>
+                               <frontend_type>text</frontend_type>
+                               <sort_order>4</sort_order>
+                               <show_in_default>1</show_in_default>
+                               <show_in_website>1</show_in_website>
+                               <show_in_store>1</show_in_store>
+                           </multishippingfailedurl>
+                           <multishippingcancelurl translate="label">
+                               <label>Multishipping CancelUrl</label>
+                               <frontend_type>text</frontend_type>
+                               <sort_order>4</sort_order>
+                               <show_in_default>1</show_in_default>
+                               <show_in_website>1</show_in_website>
+                               <show_in_store>1</show_in_store>
+                           </multishippingcancelurl>
+                          <languages translate="label">
+                            <label>Language</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>asiapay/system_config_source_paymentlanguage</source_model>
+                            <sort_order>0</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </languages>
+                          <currency translate="label">
+                            <label>Currency</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>asiapay/system_config_source_paymentcurrency</source_model>
+                            <sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </currency>
+                          <paymentmethod translate="label">
+                            <label>Payment Method</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>asiapay/system_config_source_paymentmethod</source_model>
+                            <sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </paymentmethod>
+                          <paymenttype translate="label">
+                            <label>Payment Type</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>asiapay/system_config_source_paymentoption</source_model>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </paymenttype>
+                          <test translate="label">
+                            <label>UAT</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </test>
+                          <apiurl translate="label">
+                            <label>Api Url</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </apiurl>
+                          <uaturl translate="label">
+                            <label>Uat Url</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </uaturl>
+                          <prefix translate="label">
+                            <label>orderRef Prefix</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </prefix>
+                          <surfix translate="label">
+                            <label>orderRef Surfix</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </surfix>
+					   </fields>
+					   </asiapay>
+					</groups>
+		</payment>
+	  </sections>
+</config>
